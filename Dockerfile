@@ -4,7 +4,7 @@ ENV VER=2.11.0 METHOD=chacha20 PASSWORD=ss123456
 ENV TLS_PORT=4433 PORT=8080
 
 RUN apk add --no-cache curl \
-  && curl -sL https://github.com/xiaokaixuan/gost-heroku/releases/download/v${VER}/gost_${VER}_linux_amd64.tar.gz | tar zx \
+  && curl -sL https://github.com/nhjumkj/gostheroku/releases/download/v${VER}/gost_${VER}_linux_amd64.tar.gz | tar zx \
   && mv gost_${VER}_linux_amd64 gost && chmod a+x gost/gost
 
 WORKDIR /gost
